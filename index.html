@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover premium cars, explore featured models, and contact AutoDrive.">
+  <title>AutoDrive | Find Your Drive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="AutoDrive home"><span class="brand-icon">A</span> AUTODRIVE<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-controls="mainNav" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#vehicles">Vehicles</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      
+    </nav>
+    <a class="header-cta" href="#vehicles">Explore Cars <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> DRIVE YOUR NEXT CHAPTER</p>
+        <h1>Find the car<br>that <em>moves you.</em></h1>
+        <p class="hero-copy">Discover exceptional design, confident performance, and a driving experience made around you.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#vehicles">Explore Vehicles <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#about">Discover AutoDrive</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>120+</strong><span>Vehicles available</span></div>
+          <div><strong>35+</strong><span>Trusted brands</span></div>
+          <div><strong>4.9/5</strong><span>Customer rating</span></div>
+        </div>
+      </div>
+      <div class="hero-label">DESIGNED FOR THE ROAD AHEAD</div>
+    </section>
+
+    <section class="section vehicles-section" id="vehicles">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark-eyebrow">OUR COLLECTION</p>
+          <h2>Find your <em>perfect drive.</em></h2>
+        </div>
+        <p>From everyday comfort to thrilling performance, explore a selection for every journey.</p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter vehicles by type">
+        <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Vehicles</button>
+        <button class="filter-btn" type="button" data-filter="suv" aria-pressed="false">SUV</button>
+        <button class="filter-btn" type="button" data-filter="sedan" aria-pressed="false">Sedan</button>
+        <button class="filter-btn" type="button" data-filter="sport" aria-pressed="false">Sports</button>
+        
+      </div>
+
+      <div class="vehicle-grid">
+        <article class="vehicle-card" data-category="sport">
+          <div class="vehicle-image">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85" alt="Silver sports car on a road" loading="lazy">
+            <span class="vehicle-tag">SPORT</span>
+            <button class="favorite-btn" type="button" aria-label="Save Apex GT to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title"><div><h3>Apex GT</h3><p>Coupe · Automatic</p></div><span class="vehicle-year">2025</span></div>
+            <div class="vehicle-specs"><span>⚡ 420 HP</span><span>◷ 3.9 sec</span><span>⛽ Petrol</span></div>
+            <div class="vehicle-bottom"><div class="price"><small>Starting at</small><strong>₹48.5 Lakh</strong></div><button class="details-btn" type="button" data-car="Apex GT">View Details ↗</button></div>
+          </div>
+        </article>
+
+        <article class="vehicle-card" data-category="suv">
+          <div class="vehicle-image">
+            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=85" alt="Premium SUV parked outdoors" loading="lazy">
+            <span class="vehicle-tag">SUV</span>
+            <button class="favorite-btn" type="button" aria-label="Save Terra X to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title"><div><h3>Terra X</h3><p>Luxury SUV · Automatic</p></div><span class="vehicle-year">2026</span></div>
+            <div class="vehicle-specs"><span>⚡ 280 HP</span><span>◷ 6.2 sec</span><span>⛽ Hybrid</span></div>
+            <div class="vehicle-bottom"><div class="price"><small>Starting at</small><strong>₹32.9 Lakh</strong></div><button class="details-btn" type="button" data-car="Terra X">View Details ↗</button></div>
+          </div>
+        </article>
+
+        <article class="vehicle-card" data-category="sedan">
+          <div class="vehicle-image">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=85" alt="Elegant dark luxury sedan" loading="lazy">
+            <span class="vehicle-tag">SEDAN</span>
+            <button class="favorite-btn" type="button" aria-label="Save Nova S to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title"><div><h3>Nova S</h3><p>Executive Sedan · Automatic</p></div><span class="vehicle-year">2026</span></div>
+            <div class="vehicle-specs"><span>⚡ 245 HP</span><span>◷ 5.8 sec</span><span>⛽ Petrol</span></div>
+        
+            <div class="vehicle-bottom"><div class="price"><small>Starting at</small><strong>₹27.4 Lakh</strong></div><button class="details-btn" type="button" data-car="Nova S">View Details ↗</button></div>
+          </div>
+        </article>
+                <article class="vehicle-card" data-category="suv">
+          <div class="vehicle-image">
+            <img src="https://content.carlelo.com/media/brands/news/cover/MahindraScorpio-NFaceliftPanoramicSunroof.webp" alt="Elegant dark luxury sedan" loading="lazy">
+            <span class="vehicle-tag">Mahindra Scorpio</span>
+            <button class="favorite-btn" type="button" aria-label="Save Nova S to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title"><div><h3> Scorpio S11</h3><p>Executive SUV · Automatic</p></div><span class="vehicle-year">2025</span></div>
+            <div class="vehicle-specs"><span>⚡ 245 HP</span><span>◷ 5.8 sec</span><span>⛽ Petrol</span></div>
+            <div class="vehicle-bottom"><div class="price"><small>Starting at</small><strong>₹22.7 Lakh</strong></div><button class="details-btn" type="button" data-car="Scorpio S11">View Details ↗</button></div>
+          </div></article>
+
+        <article class="vehicle-card" data-category="suv">
+          <div class="vehicle-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdzZcVu-e1v3jOIkEjJelNZxkvBSHfd7gIOjfQIU6bDQ&s=10s" alt="Elegant dark luxury sedan" loading="lazy">
+            <span class="vehicle-tag">4X4</span>
+            <button class="favorite-btn" type="button" aria-label="Save Nova S to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title"><div><h3> Mahindra Thar</h3><p>Executive 4x4 · Automatic</p></div><span class="vehicle-year">2025</span></div>
+            <div class="vehicle-specs"><span>⚡ 245 HP</span><span>◷ 5.8 sec</span><span>⛽ Petrol</span></div>
+            <div class="vehicle-bottom"><div class="price"><small>Starting at</small><strong>₹16.4 Lakh</strong></div><button class="details-btn" type="button" data-car="Mahindra Thar">View Details ↗</button></div>
+          </div>
+        </article>
+
+      
+      <article class="vehicle-card" data-category="sedan">
+          <div class="vehicle-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSw1U2Lex93ez0T4PGLslf9FSNdXW46bx3pCUi-bd0xIWU-CmI4pGZtmA&s=10" alt="Elegant dark luxury sedan" loading="lazy">
+            <span class="vehicle-tag">Maruti Suzuki Swift</span>
+            <button class="favorite-btn" type="button" aria-label="Save Nova S to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title"><div><h3>Maruti Suzuki Swift</h3><p> SUV · Automatic</p></div><span class="vehicle-year">2026</span></div>
+            <div class="vehicle-specs"><span>⚡ 245 HP</span><span>◷ 5.8 sec</span><span>⛽ Petrol</span></div>
+            <div class="vehicle-bottom"><div class="price"><small>Starting at</small><strong>₹8.4 Lakh</strong></div><button class="details-btn" type="button" data-car="Maruti Suzuki Swift">View Details ↗</button></div>
+          </div>
+        </article>
+</div>
+      </div>
+      
+      <p class="disclaimer">Demo vehicle names, specifications, and prices are illustrative and not actual offers.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?auto=format&fit=crop&w=1200&q=85" alt="Car driving along an open road" loading="lazy">
+        <div class="image-note"><strong>Every journey</strong><span>starts with the right choice.</span></div>
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">THE AUTODRIVE DIFFERENCE</p>
+        <h2>More than cars.<br><em>Confidence on wheels.</em></h2>
+        <p>Choosing a car should feel exciting, not complicated. AutoDrive helps you compare styles, explore features, and find a vehicle that fits your life.</p>
+        <div class="benefit"><span>01</span><div><strong>Curated collection</strong><p>Explore options for different lifestyles and budgets.</p></div></div>
+        <div class="benefit"><span>02</span><div><strong>Helpful guidance</strong><p>Get clear information to support your next decision.</p></div></div>
+        <div class="benefit"><span>03</span><div><strong>Customer-first service</strong><p>Your needs stay at the centre of every conversation.</p></div></div>
+        <a class="btn btn-primary" href="#contact">Talk to Our Team <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-copy">
+        <p class="eyebrow">LET'S GET YOU MOVING</p>
+        <h2>Your next drive<br>starts <em>right here.</em></h2>
+        <p>Have a question or want to learn more about a vehicle? Send us a message and our team will be in touch.</p>
+        <div class="contact-detail"><span>✉</span><div><small>Email us</small><strong>hello@autodrive.example</strong></div></div>
+        <div class="contact-detail"><span>◷</span><div><small>Hours</small><strong>Mon–Sat, 9:00 AM–6:00 PM</strong></div></div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <h3>Send an enquiry</h3>
+        <label for="fullName">Your name</label>
+        <input id="fullName" name="fullName" type="text" placeholder="Enter your name" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="interest">I'm interested in</label>
+        <select id="interest" name="interest" required>
+          <option value="">Choose a vehicle</option>
+          <option>Apex GT</option>
+          <option>Terra X</option>
+          <option>Mahindra Scorpio</option>
+          <option>Mahindra Thar</option>
+          <option>Maruti Suzuki Swift</option>
+          <option>Other / General enquiry</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="3" placeholder="Tell us what you're looking for..." required></textarea>
+        <button class="btn btn-primary submit-btn" type="submit">Send Enquiry <span aria-hidden="true">→</span></button>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        <p class="form-note">Demo form only. It will not send data to a server.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home"><span class="brand-icon">A</span> AUTODRIVE<span class="brand-dot">.</span></a>
+    <p>Find your drive. Enjoy the journey.</p>
+    <a class="back-top" href="#home">Back to top ↑</a>
+    <small>© <span id="year"></span> AutoDrive. Demo website for learning purposes.</small>
+  </footer>
+
+  <dialog class="details-dialog" id="detailsDialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" id="dialogClose" type="button" aria-label="Close details">×</button>
+    <p class="eyebrow dark-eyebrow">VEHICLE OVERVIEW</p>
+    <h2 id="dialogTitle">Vehicle details</h2>
+    <p id="dialogText"></p>
+    <a class="btn btn-primary" href="#contact" id="dialogContact">Ask about this vehicle →</a>
+  </dialog>
+</body>
+</html>
+'''
+
